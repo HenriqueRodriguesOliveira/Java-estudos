@@ -8,8 +8,13 @@ public class Main {
         Carro meuCarro = new Sandero();
         Carro meuCarro2 = new Mobi();
 
+        SerVivo meuSer = new Humano();
+        meuSer.respirar();
+
         meuCarro.acelerar();
         meuCarro2.acelerar();
+
+        meuSer.dormir();
     }
 }
 
