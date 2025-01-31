@@ -1,5 +1,10 @@
 import java.util.ArrayList;
 
+// public -> acessível de todo lugar.
+// default -> quando eu nao defino, ele segue esse daqui.
+// private -> acessível somente dentro de classe que foi definida.
+// proteced -> acessível por todo mundo que está no mesmo pacote.
+
 public class Main {
     public static void main(String[] args) {
         Carro meuCarro = new Carro("Fusca");
@@ -12,7 +17,7 @@ public class Main {
 
 class Carro {
     String modelo;
-    public Carro(String modelo){
+    protected Carro(String modelo){
         this.modelo = modelo;
     }
 
