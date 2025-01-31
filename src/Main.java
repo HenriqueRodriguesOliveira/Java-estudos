@@ -14,7 +14,14 @@ public class Main {
         meuCarro.acelerar();
         meuCarro2.acelerar();
 
-        meuSer.dormir();
+        Carro carroFurado = null;
+
+        try{
+            carroFurado.acelerar();
+        } catch (NullPointerException exception){
+            System.out.println("vende carro furado");
+        }
+
     }
 }
 
